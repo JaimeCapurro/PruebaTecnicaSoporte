@@ -11,7 +11,7 @@
 
 <body class="invisible">
     <h1>Nombre: {{ $aplicante['nombre'] }}</h1>
-    @if ($aplicante->aprobado)
+    @if ($aplicante['aprobado'])
         <h2>APROBADO</h1>
         @else
             <h2>REPROBADO</h1>
@@ -20,7 +20,5 @@
 
 </html>
 <style>
-    .invisible {
-        display: none;
-    }
+
 </style>
